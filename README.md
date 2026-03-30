@@ -52,14 +52,14 @@ pre-commit run --all-files
 
 | Name | Version |
 |------|---------|
-| [terraform](#requirement_terraform) | >= 1.5.7 |
-| [aws](#requirement_aws) | >= 5.0 |
+| <a name="requirement_terraform"></a> [terraform](#requirement\_terraform) | >= 1.5.7 |
+| <a name="requirement_aws"></a> [aws](#requirement\_aws) | >= 5.0 |
 
 ## Providers
 
 | Name | Version |
 |------|---------|
-| [aws](#provider_aws) | >= 5.0 |
+| <a name="provider_aws"></a> [aws](#provider\_aws) | >= 5.0 |
 
 ## Modules
 
@@ -75,22 +75,22 @@ No modules.
 
 | Name | Description | Type | Default | Required |
 |------|-------------|------|---------|:--------:|
-| [file_system_id](#input_file_system_id) | ID do sistema de arquivos EFS onde o access point sera criado. | `string` | n/a | yes |
-| [name](#input_name) | Nome opcional para adicionar na tag Name do access point. | `string` | `null` | no |
-| [owner_gid](#input_owner_gid) | GID do owner usado na criacao do diretorio raiz. | `number` | n/a | yes |
-| [owner_uid](#input_owner_uid) | UID do owner usado na criacao do diretorio raiz. | `number` | n/a | yes |
-| [path](#input_path) | Caminho que sera exposto como root directory do access point. | `string` | n/a | yes |
-| [permissions](#input_permissions) | Permissoes POSIX do diretorio raiz criado no EFS. | `string` | `"755"` | no |
-| [posix_user_gid](#input_posix_user_gid) | GID do usuario POSIX usado pelo access point. | `number` | n/a | yes |
-| [posix_user_uid](#input_posix_user_uid) | UID do usuario POSIX usado pelo access point. | `number` | n/a | yes |
-| [secondary_gids](#input_secondary_gids) | Lista opcional de GIDs secundarios para o usuario POSIX. | `list(number)` | `[]` | no |
-| [tags](#input_tags) | Tags adicionais para aplicar no access point. | `map(string)` | `{}` | no |
+| <a name="input_file_system_id"></a> [file\_system\_id](#input\_file\_system\_id) | ID do sistema de arquivos EFS onde o access point sera criado. | `string` | n/a | yes |
+| <a name="input_name"></a> [name](#input\_name) | Nome opcional para adicionar na tag Name do access point. | `string` | `null` | no |
+| <a name="input_owner_gid"></a> [owner\_gid](#input\_owner\_gid) | GID do owner usado na criacao do diretorio raiz. | `number` | n/a | yes |
+| <a name="input_owner_uid"></a> [owner\_uid](#input\_owner\_uid) | UID do owner usado na criacao do diretorio raiz. | `number` | n/a | yes |
+| <a name="input_path"></a> [path](#input\_path) | Caminho que sera exposto como root directory do access point. | `string` | n/a | yes |
+| <a name="input_permissions"></a> [permissions](#input\_permissions) | Permissoes POSIX do diretorio raiz criado no EFS. | `string` | `"755"` | no |
+| <a name="input_posix_user_gid"></a> [posix\_user\_gid](#input\_posix\_user\_gid) | GID do usuario POSIX usado pelo access point. | `number` | n/a | yes |
+| <a name="input_posix_user_uid"></a> [posix\_user\_uid](#input\_posix\_user\_uid) | UID do usuario POSIX usado pelo access point. | `number` | n/a | yes |
+| <a name="input_secondary_gids"></a> [secondary\_gids](#input\_secondary\_gids) | Lista opcional de GIDs secundarios para o usuario POSIX. | `list(number)` | `[]` | no |
+| <a name="input_tags"></a> [tags](#input\_tags) | Tags adicionais para aplicar no access point. | `map(string)` | `{}` | no |
 
 ## Outputs
 
 | Name | Description |
 |------|-------------|
-| [arn](#output_arn) | ARN do EFS access point. |
-| [file_system_id](#output_file_system_id) | ID do sistema de arquivos EFS associado ao access point. |
-| [id](#output_id) | ID do EFS access point. |
+| <a name="output_arn"></a> [arn](#output\_arn) | ARN do EFS access point. |
+| <a name="output_file_system_id"></a> [file\_system\_id](#output\_file\_system\_id) | ID do sistema de arquivos EFS associado ao access point. |
+| <a name="output_id"></a> [id](#output\_id) | ID do EFS access point. |
 <!-- END_TF_DOCS -->

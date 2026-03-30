@@ -19,5 +19,3 @@ resource "aws_efs_access_point" "this" {
 
   tags = merge(var.tags, var.name != null ? { Name = var.name } : {})
 }
-
-
